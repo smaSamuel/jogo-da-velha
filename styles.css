@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #835f5f;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.game-container {
+    text-align: center;
+}   
+
+.borad {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.borad--status {
+    display: flex;
+    flex-direction: column;
+}
+
+#reset {
+    background-color: white;
+    border-style: none;
+    border-radius: 10px;
+    width: 50%;
+    font-size: 20px;
+    box-shadow: 5px 3px 3px #62464d;
+}
+
+#Jogada {
+    font-size: 30px;
+}
+
+#Jogada-destaque {
+    color: aquamarine;
+}
+
+#status {
+    padding-bottom: 20px;
+    font-size: 30px
+}
+
+#Jogada {
+    padding-top: 20px;
+}

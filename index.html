@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Da Velha</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <p id="status">X = 0 | O = 0</p>
+        <h1>Jogo da velha</h1>
+        <div class="borad">
+            <table id="grid">
+                <button class="cell" linha="1" colum="1" data-index="0"></button>
+                <button class="cell" linha="1" colum="2" data-index="1"></button>
+                <button class="cell" linha="1" colum="3" data-index="2"></button>
+                <button class="cell" linha="2" colum="1" data-index="3"></button>
+                <button class="cell" linha="2" colum="2" data-index="4"></button>
+                <button class="cell" linha="2" colum="3" data-index="5"></button>
+                <button class="cell" linha="3" colum="1" data-index="6"></button>
+                <button class="cell" linha="3" colum="2" data-index="7"></button>
+                <button class="cell" linha="3" colum="3" data-index="8"></button>
+            </table>
+        </div>
+        <button id="reset" onclick="Resetar()">Reinicar Jogo</button>
+        <p id="Jogada">Vez do jogador : <strong>X</strong></p>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
